@@ -8,7 +8,6 @@ tmp/*
 !tmp/.gitkeep
 .env
 coverage/
-ormconfig.json
 dist/
 
 !src/modules/.gitkeep
