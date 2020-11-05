@@ -8,6 +8,5 @@ tmp/*
 !tmp/.gitkeep
 .env
 coverage/
-dist/
 
 !src/modules/.gitkeep
