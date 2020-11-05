@@ -10,7 +10,7 @@
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpileOnly --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "start": "ts-node -r tsconfig-paths/register src/shared/infra/http/server.ts",
+    "start": "ts-node -r tsconfig-paths/register -p src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "test": "jest"
   },
@@ -34,6 +34,8 @@
     "rate-limiter-flexible": "^2.1.7",
     "redis": "^3.0.2",
     "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.0.0",
+    "typescript": "^3.8.3",
     "tsyringe": "^4.3.0",
     "typeorm": "^0.2.24",
     "uuidv4": "^6.0.8"
@@ -68,7 +70,6 @@
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.3",
     "ts-node-dev": "^1.0.0-pre.44",
-    "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.8.3"
+    "tsconfig-paths": "^3.9.0"
   }
 }
