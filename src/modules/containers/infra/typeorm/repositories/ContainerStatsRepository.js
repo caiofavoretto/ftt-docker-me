@@ -35,7 +35,11 @@ class ContainerStatsRepository {
     const containerStats = await this.ormRepository.find({
       where: {
         container_id
-      }
+      },
+      order: {
+        created_at: 'DESC'
+      },
+      take: 20
     });
     return containerStats;
   }
