@@ -1,9 +1,10 @@
 {
+  "name": "default",
   "type": "mongodb",
   "url": "mongodb+srv://omnistack:omnistack@cluster0.1eqdu.mongodb.net/docker_me?retryWrites=true&w=majority",
   "useNewUrlParser": true,
   "synchronize": true,
   "logging": true,
   "useUnifiedTopology": true,
-  "entities": ["./src/modules/**/infra/typeorm/schemas/*.ts"]
+  "entities": ["./src/modules/**/infra/typeorm/schemas/*.js"]
 }
