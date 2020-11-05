@@ -1,0 +1,10 @@
+{
+  "name": "default",
+  "type": "mongodb",
+  "host": "cluster0.1eqdu.mongodb.net",
+  "username": "omnistack",
+  "password": "omnistack",
+  "database": "docker_me",
+  "useUnifiedTopology": true,
+  "entities": ["./src/modules/**/infra/typeorm/schemas/*.ts"]
+}
